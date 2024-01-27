@@ -1712,149 +1712,112 @@
                 <[string8][Input][YokeHeadingRatioInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.0)(0.0 0.305433)(1.0 0.610865)]>
             >
-            <[graphics_rotation][insideRotate_1635][]
-                <[string8][Input][insideMapping_1635.Output]>
-                <[tmvector3d][Axis][0.001019 -0.999999 0.0]>
-                <[tmvector3d][Pivot][-0.457880 0.165211 -0.601805]>
-            >
-            <[rigidbodygraphics][LeftPedal][]
+            <[hingedbodygraphics][LeftPedal][]
                 <[string8][GeometryList][ Inside990454 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][insideRotate_1635.Output]>
-            >
+                <[string8][Input][insideMapping_1635.Output]>
+                <[tmvector3d][Axis][0.001019 -0.999999 0.0]>
+                <[tmvector3d][Pivot][-0.457880 0.165211 -0.601805]>
+            >			
             <[graphics_linear_interpolation][insideMapping_1644][]
                 <[string8][Input][YokeHeadingRatioInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.0)(0.0 -0.305433)(1.0 -0.610865)]>
             >
-            <[graphics_rotation][insideRotate_1644][]
+            <[hingedbodygraphics][Inside_99477_4][]
+                <[string8][GeometryList][ Inside994774 ]>
                 <[string8][Input][insideMapping_1644.Output]>
                 <[tmvector3d][Axis][0.001019 -0.999999 0.0]>
                 <[tmvector3d][Pivot][-0.435630 0.197467 -0.561108]>
-                <[string8][InputTransform][insideRotate_1635.Output]>
-            >
-            <[rigidbodygraphics][Inside_99477_4][]
-                <[string8][GeometryList][ Inside994774 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][insideRotate_1644.Output]>
-            >
+                <[string8][Graphics][LeftPedal]>
+            >			
             <[graphics_linear_interpolation][insideMapping_1654][]
                 <[string8][Input][YokeHeadingRatioInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.0)(0.0 -0.305433)(1.0 -0.610865)]>
             >
-            <[graphics_rotation][insideRotate_1654][]
+            <[hingedbodygraphics][Inside_100233_4][]
+                <[string8][GeometryList][ Inside1002334 ]>
                 <[string8][Input][insideMapping_1654.Output]>
                 <[tmvector3d][Axis][0.001014 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.426827 0.197467 -0.567063]>
-                <[string8][InputTransform][insideRotate_1635.Output]>
-            >
-            <[rigidbodygraphics][Inside_100233_4][]
-                <[string8][GeometryList][ Inside1002334 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][insideRotate_1654.Output]>
+                <[string8][Graphics][LeftPedal]>
             >
             <[graphics_linear_interpolation][insideMapping_1664][]
                 <[string8][Input][YokeHeadingRatioInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.0) (1.0 -0.610865)]>
             >
-            <[graphics_rotation][insideRotate_1664][]
+            <[hingedbodygraphics][Inside_dummy_l1][]
+                <[string8][GeometryList][ DummyL1 ]>
                 <[string8][Input][insideMapping_1664.Output]>
                 <[tmvector3d][Axis][0.001014 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.457820 0.079150 -0.601900]>
-                <[string8][InputTransform][insideRotate_1635.Output]>
-            >
-
+                <[string8][Graphics][LeftPedal]>
+            >			
             <[graphics_linear_interpolation][insideMapping_1667][]
                 <[string8][Input][LeftBrakeRatioInput.Output]>
                 <[tmvector2d][Map][ (0.0 0.0) (1.0 0.261799)]>
             >
-            <[graphics_rotation][insideRotate_1667][]
+            <[hingedbodygraphics][Inside_100989_4][]
+                <[string8][GeometryList][ Inside1009894 ]>
                 <[string8][Input][insideMapping_1667.Output]>
                 <[tmvector3d][Axis][0.001014 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.457820 0.079150 -0.601900]>
-                <[string8][InputTransform][insideRotate_1664.Output]>
-            >
-            <[rigidbodygraphics][Inside_100989_4][]
-                <[string8][GeometryList][ Inside1009894 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][insideRotate_1667.Output]>
+                <[string8][Graphics][Inside_dummy_l1]>
             >
             <[graphics_linear_interpolation][insideMapping_1672][]
                 <[string8][Input][LeftBrakeRatioInput.Output]>
                 <[tmvector2d][Map][(0.0 0.0) (1.0 -0.261799)]>
             >
-            <[graphics_rotation][insideRotate_1672][]
+            <[hingedbodygraphics][Inside_101433_4][]
+                <[string8][GeometryList][ Inside1014334 ]>
                 <[string8][Input][insideMapping_1672.Output]>
                 <[tmvector3d][Axis][0.001014 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.458180 0.078980 -0.623390]>
-                <[string8][InputTransform][insideRotate_1667.Output]>
-            >
-            <[rigidbodygraphics][Inside_101433_4][]
-                <[string8][GeometryList][ Inside1014334 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][insideRotate_1672.Output]>
-            >
+                <[string8][Graphics][Inside_100989_4]>
+            >						
             <[graphics_linear_interpolation][insideMapping_1679][]
                 <[string8][Input][LeftBrakeRatioInput.Output]>
                 <[tmvector2d][Map][(0.0 0.0) (1.0 0.261799)]>
             >
-            <[graphics_rotation][insideRotate_1679][]
+            <[hingedbodygraphics][Inside_dummy_l2][]
+                <[string8][GeometryList][ DummyL2 ]>
                 <[string8][Input][insideMapping_1679.Output]>
                 <[tmvector3d][Axis][0.001014 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.388584 0.064306 -0.502442]>
-                <[string8][InputTransform][insideRotate_1635.Output]>
-            >
+                <[string8][Graphics][LeftPedal]>
+            >			
             <[graphics_linear_interpolation][insideMapping_1682][]
                 <[string8][Input][YokeHeadingRatioInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.0) (1.0 -0.610865)]>
             >
-            <[graphics_rotation][insideRotate_1682][]
+            <[hingedbodygraphics][LeftBrakePedal][]
+                <[string8][GeometryList][ Inside1023574 Inside1041454 ]>
                 <[string8][Input][insideMapping_1682.Output]>
                 <[tmvector3d][Axis][0.001014 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.388584 0.064306 -0.502442]>
-                <[string8][InputTransform][insideRotate_1679.Output]>
-            >
-            <[rigidbodygraphics][LeftBrakePedal][]
-                <[string8][GeometryList][ Inside1023574 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][insideRotate_1682.Output]>
-            >
+                <[string8][Graphics][Inside_dummy_l2]>
+            >	
             <[graphics_linear_interpolation][insideMapping_1688][]
                 <[string8][Input][YokeHeadingRatioInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.0) (1.0 0.610865)]>
             >
-            <[graphics_rotation][insideRotate_1688][]
+            <[hingedbodygraphics][Inside_dummy_l3][]
+                <[string8][GeometryList][ DummyL3 ]>
                 <[string8][Input][insideMapping_1688.Output]>
                 <[tmvector3d][Axis][0.001014 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.365774 0.089711 -0.504837]>
-                <[string8][InputTransform][insideRotate_1682.Output]>
-            >
+                <[string8][Graphics][LeftBrakePedal]>
+            >			
             <[graphics_linear_interpolation][insideMapping_1691][]
                 <[string8][Input][LeftBrakeRatioInput.Output]>
                 <[tmvector2d][Map][(0.0 0.0) (1.0 -0.261799)]>
             >
-            <[graphics_rotation][insideRotate_1691][]
+            <[hingedbodygraphics][Inside_102681_4][]
+                <[string8][GeometryList][ Inside1026814 ]>
                 <[string8][Input][insideMapping_1691.Output]>
                 <[tmvector3d][Axis][0.001014 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.365774 0.089711 -0.504837]>
-                <[string8][InputTransform][insideRotate_1688.Output]>
-            >
-            <[rigidbodygraphics][Inside_102681_4][]
-                <[string8][GeometryList][ Inside1026814 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][insideRotate_1691.Output]>
-            >
-            <[rigidbodygraphics][Inside_104145_4][]
-                <[string8][GeometryList][ Inside1041454 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][insideRotate_1682.Output]>
+                <[string8][Graphics][Inside_dummy_l3]>
             >
 
 			// right pedal
