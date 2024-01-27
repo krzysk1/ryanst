@@ -24,20 +24,31 @@ Use it at your own risk!
 
 # Weights
   Weight Empty            1101 Lbs. = 499.4 kg
+  
     fuselage					150 kg
+    
 	wings						140 kg
+ 
 	main gears					62	kg
+ 
 	tail gear					4.4 kg
+ 
 	propeller					8 kg
+ 
 	engine (dry)		  299 lb (135 kg)
+ 
   Useful Load
+  
     Crew, two at 170      340 Lbs. = 154.2 kg
+    
     Fuel, 24 Gal.         144 Lbs. = 65.3 kg
+    
     Oil, 2 Gal.           15 Lbs. = 6.8 kg
+    
   Gross Weight            1600 Lbs. = 725.7 kg
 
 
-#Note by FTLX Designs:
+# Note by FTLX Designs:
 
 Ryan ST-A for X-Plane 11, by FTLX Designs
 
