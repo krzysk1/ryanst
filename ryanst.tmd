@@ -3,12 +3,12 @@
     //-------------------------------------
     // Plane: Ryan ST-A for Aerofly FS4
     // Compilation: Krzysztof Kaniewski
-    // 3D model: FTLX Designs 
-    // 
+    // 3D model: FTLX Designs
+    //
     // LEGAL:
-    // This file is FREEWARE. It should not harm your computer, but you install it at your own risk. 
+    // This file is FREEWARE. It should not harm your computer, but you install it at your own risk.
 	// Feel free to copy, modify or distribute it, but if you do, please give me and the original author(s) credit for our modifications. You may not use it for any commercial purposes.
-    // 
+    //
     // Date: Nov 2022; May 2023; Jan 2024
     //-------------------------------------
 
@@ -50,7 +50,7 @@
                 <[float64][Kt][0.04]>
                 <[float64][Dt][0.02]>
                 <[bool][InCockpit][true]>
-            >            
+            >
             <[camera][CameraLeftWing][]
                 <[string8][Tags][left wing]>
                 <[string8][Body][Fuselage]>
@@ -84,7 +84,7 @@
 
 
             // rigidbody systems start
-								
+
             // airframe
             <[rigidbody][Fuselage][]
                 <[float64][Mass][150.0]>
@@ -155,7 +155,7 @@
                 <[float64][StaticFrictionCoefficient][2.0]>
                 <[float64][KineticFrictionCoefficient][0.7]>
                 <[bool][InstantCrash][true]>
-            >            
+            >
             <[collisionhull][CollisionLeftWing][]
                 <[string8][Body][LeftWing]>
                 <[string8][Geometry][F2t1]>
@@ -300,9 +300,9 @@
             >
 
 
-            // fuel system start			
+            // fuel system start
             // max 83.74l = 65,32kg avgas with 0.780 kg per l avgas
-			 
+
             <[rigidbody][FuelMass][]
                 <[float64][Mass][65.3]>
                 <[tmvector3d][InertiaLength][0.2 0.2 0.25]>
@@ -366,10 +366,10 @@
 
             <[fuel_deprecated_line][MainFuelLine][]
                 <[float64][Pressure][101325.0]>
-            >			
+            >
 
             // payload
-			
+
             <[rigidbody][PilotBody][]
                 <[float64][Mass][77.1]>
                 <[tmvector3d][InertiaLength][0.25 0.3 0.7]>
@@ -401,8 +401,8 @@
                 <[float64][Kd][1000.0]>
                 <[float64][InitialVelocity][0.0]>
                 <[uint32][Type][0]>
-            >			
-			
+            >
+
             // rigidbody systems end
 
 
@@ -471,7 +471,7 @@
             >
 
             // airfoils
-            <[airfoil][AirfoilHorizontalStabilizer][] //NACA 0006 (symmetrical)   
+            <[airfoil][AirfoilHorizontalStabilizer][] //NACA 0006 (symmetrical)
                 <[float64][Cl0][0.0]>
                 <[float64][Cd0][0.005000]>
                 <[float64][Cm0][0.0]>
@@ -491,7 +491,7 @@
                 <[float64][StallRange][0.139626]>
                 <[float64][AttachedCenterFlap][-0.12]>
             >
-            <[airfoil][AirfoilVerticalStabilizer][] //NACA 0009 (symmetrical)  NACA 0024 (symmetrical) 
+            <[airfoil][AirfoilVerticalStabilizer][] //NACA 0009 (symmetrical)  NACA 0024 (symmetrical)
                 <[float64][Cl0][0.0]>
                 <[float64][Cd0][0.005200]>
                 <[float64][Cm0][0.0]>
@@ -913,7 +913,7 @@
             <[output_free][ServoFlapsOutput][]
                 <[string8][Input][ServoFlaps.Output]>
             >
-			
+
             // pitch trim
             <[input_default][PitchTrim][]
                 <[string8][Message][Controls.Trim]>
@@ -1009,7 +1009,7 @@
             >
             <[output_free][ParkingBrakeOutput][]
                 <[string8][Input][ParkingBrake.Output]>
-            >			
+            >
             <[input_default][LeftBrakeInput][]
                 <[string8][Message][Controls.WheelBrake.Left]>
             >
@@ -1047,7 +1047,7 @@
             <[polynomial][RightBrake][]
                 <[string8][Input][RightBrakePedal.Output]>
                 <[float64array][Coefficients][ 0.5 0.5 0.0 ]>
-            >			
+            >
             // primer lever
             <[input_lever][PrimerLever][]
                 <[string8][Message][Controls.Primer]>
@@ -1058,7 +1058,7 @@
             <[output_free][PrimerLeverOutput][]
                 <[string8][Input][PrimerLever.Output]>
             >
-			
+
             <[servoclassic][ServoLeftAileron][]
                 <[string8][Input][AileronTrimmed.Output]>
                 <[float64][Speed][10.000]>
@@ -1148,7 +1148,7 @@
             <[output_free][ElevatorTrimPositionOutput][]
                 <[string8][Input][ElevatorTrimPosition.Output]>
             >
-			
+
             // engines start
 
             <[rigidbody][PropellerBody][]
@@ -1167,7 +1167,7 @@
                 <[uint32][Type][0]>
                 <[float64][InitialVelocity][32.0]>
             >
-            <[airfoil][AirfoilPropeller][] //Clark-Y (good propeller)   
+            <[airfoil][AirfoilPropeller][] //Clark-Y (good propeller)
                 <[float64][Cl0][0.470000]>
                 <[float64][Cd0][0.008200]>
                 <[float64][Cm0][-0.070000]>
@@ -1233,7 +1233,7 @@
                 <[float64][RatedPower][93212]>
                 <[float64][Displacement][0.00595]>
             >
-			
+
             <[air_flow][CoolingAir][]
                 <[string8][Body][Fuselage]>
             >
@@ -1251,7 +1251,7 @@
             >
             <[output][EngineManifoldPressure][]
                 <[string8][Input][Engine.ManifoldPressure]>
-            >			
+            >
             <[product][NormalizedPropellerSpeed][]
                 <[string8][Inputs][ DriveShaft.RotationSpeed 0.00460 ]>
             >
@@ -1275,7 +1275,7 @@
                 <[string8][Input][Magnetos.Output]>
                 <[string8][Set][1 3]>
             >
-			
+
             // fuel selector
             <[input_switch][FuelSelectorInput][]
                 <[string8][Message][Controls.FuelSelector]>
@@ -1309,7 +1309,7 @@
             <[output_free][EngineCylinderHeadTemperatureOutput][]
                 <[string8][Input][EngineCylinderHeadTemperature.Output]>
             >
-			
+
             // engines end
 
             // animations start
@@ -1366,7 +1366,7 @@
 
             // altitude
             <[input_pressure_setting][PressureSetting][]
-                <[string8][Message][Controls.PressureSetting0]>
+                <[string8][Message][Controls.PressureSetting]>
             >
             <[output_free][PressureSettingOutput][]
                 <[string8][Input][PressureSetting.Output]>
@@ -1444,8 +1444,8 @@
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -0.7150 0.0 0.12 ]>
                 <[float64][MaximumTilt][0.001]>
-            >			
-			
+            >
+
             // heading
             <[heading_indicator][HeadingIndicator][]
                 <[string8][Body][Fuselage]>
@@ -1454,7 +1454,7 @@
                 <[string8][Input][HeadingIndicator.MagneticHeading]>
                 <[string8][Message][Aircraft.MagneticHeading]>
             >
-			
+
             // navigation instruments end
 
             // electricity start
@@ -1517,7 +1517,7 @@
                 <[string8][Events][ SwitchSound.Trigger ]>
                 <[string8][EventsRelease][ SwitchSound.Trigger ]>
                 <[float64][Value][0.0]>
-            >			
+            >
 
             // battery bus end
 
@@ -1554,7 +1554,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-			// propeller			
+			// propeller
             <[rotatingbodygraphics][PropellerSpinner][]
                 <[string8][GeometryList][ M1t39097 Mt8630712 Mta243013 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -1596,7 +1596,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-            // left aileron			
+            // left aileron
             <[graphics_input][StickRollRatioInput][]
                 <[uint32][InputID][AileronPosition.Output]>
             >
@@ -1664,7 +1664,7 @@
 			// rudder
             <[graphics_input][YokeHeadingRatioInput][]
                 <[uint32][InputID][RudderPosition.Output]>
-            >			
+            >
             <[graphics_linear_interpolation][RudderMapping][]
                 <[string8][Input][YokeHeadingRatioInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.0)(0.0 0.418879)(1.0 0.837758)]>
@@ -1676,7 +1676,7 @@
                 <[string8][Input][RudderMapping.Output]>
                 <[tmvector3d][Axis][0.0 0.0 1.0]>
                 <[tmvector3d][Pivot][-3.850800 0.0 0.519516]>
-            >			
+            >
             // right wing
             <[rigidbodygraphics][RightWing][]
                 <[string8][GeometryList][ Ft2 ]>
@@ -1697,17 +1697,17 @@
                 <[tmvector3d][Pivot][-0.756704 -3.444901 -0.442595]>
             >
 
-            // inside	
-			
+            // inside
+
             <[rigidbodygraphics][InteriorParts][]
                 <[string8][GeometryList][ Inside4 Inside25 Inside36 Inside441844 Inside983974 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-			// left pedal					
+			// left pedal
             <[graphics_input][LeftBrakeRatioInput][]
                 <[uint32][InputID][LeftBrakePedal.Output]>
-            >				
+            >
             <[graphics_linear_interpolation][insideMapping_1635][]
                 <[string8][Input][YokeHeadingRatioInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.0)(0.0 0.305433)(1.0 0.610865)]>
@@ -1765,7 +1765,7 @@
                 <[tmvector3d][Pivot][-0.457820 0.079150 -0.601900]>
                 <[string8][InputTransform][insideRotate_1635.Output]>
             >
-			
+
             <[graphics_linear_interpolation][insideMapping_1667][]
                 <[string8][Input][LeftBrakeRatioInput.Output]>
                 <[tmvector2d][Map][ (0.0 0.0) (1.0 0.261799)]>
@@ -1797,7 +1797,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][insideRotate_1672.Output]>
-            >					
+            >
             <[graphics_linear_interpolation][insideMapping_1679][]
                 <[string8][Input][LeftBrakeRatioInput.Output]>
                 <[tmvector2d][Map][(0.0 0.0) (1.0 0.261799)]>
@@ -1856,11 +1856,11 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][insideRotate_1682.Output]>
             >
-			
+
 			// right pedal
             <[graphics_input][RightBrakeRatioInput][]
                 <[uint32][InputID][RightBrakePedal.Output]>
-            >					
+            >
             <[graphics_linear_interpolation][insideMapping_1701][]
                 <[string8][Input][YokeHeadingRatioInput.Output]>
                 <[tmvector2d][Map][(-1.0 0.0)(0.0 -0.305433)(1.0 -0.610865)]>
@@ -2001,7 +2001,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][insideRotate_1756.Output]>
-            >		
+            >
 			// stick base
             <[graphics_linear_interpolation][StickBaseMapping][]
                 <[string8][Input][StickRollRatioInput.Output]>
@@ -2103,11 +2103,11 @@
                 <[tmvector3d][Axis][0.001014 -0.965921 0.258834]>
                 <[tmvector3d][Pivot][-0.840618 0.003849 -0.609717]>
                 <[string8][Graphics][Stick]>
-            >		
+            >
 			// mixture lever
             <[graphics_input][MixtureLeverInput][]
                 <[uint32][InputID][MixtureLever.Output]>
-            >				
+            >
             <[graphics_linear_interpolation][MixtureLeverMapping][]
                 <[string8][Input][MixtureLeverInput.Output]>
                 <[tmvector2d][Map][(0.0 1.308997) (1.0 0.0)]>
@@ -2134,7 +2134,7 @@
 			// throttle lever
             <[graphics_input][ThrottleLeverInput][]
                 <[uint32][InputID][ServoThrottle.Output]>
-            >			
+            >
             <[graphics_linear_interpolation][ThrottleLeverMapping][]
                 <[string8][Input][ThrottleLeverInput.Output]>
                 <[tmvector2d][Map][(0.0 1.308997) (1.0 0.0)]>
@@ -2161,7 +2161,7 @@
 			// flaps lever
             <[graphics_input][FlapRatioInput][]
                 <[uint32][InputID][ServoFlaps.Output]>
-            >			
+            >
             <[graphics_linear_interpolation][FlapsLeverMapping][]
                 <[string8][Input][FlapRatioInput.Output]>
                 <[tmvector2d][Map][ (0.0 0.0)
@@ -2177,11 +2177,11 @@
                 <[string8][Input][FlapsLeverMapping.Output]>
                 <[tmvector3d][Axis][0.0 0.978022 0.208500]>
                 <[tmvector3d][Pivot][-0.673423 -0.193800 -0.626926]>
-            >		
+            >
 			// magnetos key
             <[graphics_input][MagnetosInput][]
                 <[uint32][InputID][Magnetos.Output]>
-            >			
+            >
             <[graphics_linear_interpolation][MagnetosKeyMapping][]
                 <[string8][Input][MagnetosInput.Output]>
                 <[tmvector2d][Map][(0.0 0.0)(1.0 0.872665)(2.0 1.570797)(3.0 2.356195)]>
@@ -2221,14 +2221,14 @@
                 <[tmvector3d][Axis][0.0 -0.964283 0.264873]>
                 <[tmvector3d][Pivot][-1.142890 0.271417 -0.376270]>
                 <[string8][Scaling][12.566372]>
-            >		
+            >
 			// primer lever
             <[movinggraphics][PrimerLever][]
                 <[string8][GeometryList][ M3ta2165110 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][InputID][PrimerLever.Output]>
-                <[tmvector3d][Axis][-0.017600 0.0 0.0]>
+                <[tmvector3d][Axis][-0.0176 0.0 0.0]>
             >
 			// fuel level indicator
             <[movinggraphics][FuelLevelIndicator][]
@@ -2238,7 +2238,7 @@
                 <[uint32][InputID][NeedleFuelLevel.Output]>
                 <[tmvector3d][Axis][0.0 0.0 0.084099]>
                 <[string8][Scaling][0.01531]>
-            >	
+            >
 			// left gear
             <[rigidbodygraphics][LeftGear][]
                 <[string8][GeometryList][ Mt8635512 ]>
@@ -2295,7 +2295,7 @@
                 <[float64][RimRadius][0.075]>
                 <[tmvector3d][Axis][0.0 0.999509 0.031336]>
                 <[tmvector3d][Pivot][-3.865950 -0.000108 -0.568340]>
-            >		
+            >
 			// master battery switch
             <[hingedbodygraphics][MasterBatterySwitch][]
                 <[string8][GeometryList][ Mta635413 ]>
@@ -2303,8 +2303,8 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputID][MasterBatterySwitch.Output]>
                 <[tmvector3d][Axis][0.0 1.0 0.0]>
-                <[tmvector3d][Pivot][-0.583277 0.234398 -0.215463]>
-                <[float64][Scaling][0.785398]>				
+                <[tmvector3d][Pivot][-0.585 0.249 -0.216]>
+                <[float64][Scaling][0.785398]>
             >
 			// pitot heat switch
             <[hingedbodygraphics][PitotHeatSwitch][]
@@ -2313,13 +2313,13 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputID][PitotHeatSwitch.Output]>
                 <[tmvector3d][Axis][0.0 1.0 0.0]>
-                <[tmvector3d][Pivot][-0.583277 0.234398 -0.215463]>
-                <[float64][Scaling][0.785398]>				
+                <[tmvector3d][Pivot][-0.585 0.234 -0.216]>
+                <[float64][Scaling][0.785398]>
             >
 			// parking brake lever
             <[graphics_input][ParkingBrakeRatioInput][]
                 <[uint32][InputID][ParkingBrake.Output]>
-            >			
+            >
             <[graphics_linear_interpolation][ParkingBrakeLeverRotateMapping][]
                 <[string8][Input][ParkingBrakeRatioInput.Output]>
                 <[tmvector2d][Map][(0.0 0.0)(0.9 0.0)(0.950000 0.785398)(1.0 1.570797)]>
@@ -2339,10 +2339,10 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][ParkingBrakeLeverMoving.Output]>
-            >			
+            >
 
 			// cockpit panel
-		
+
             <[rigidbodygraphics][CockpitInterior][]
                 <[string8][GeometryList][ Cockpit41580 Cockpit43830 Cockpit53190 Cockpit64950 Cockpit66870 Cockpit70590 Cockpit85950 Cockpit91200 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -2352,7 +2352,7 @@
             <[graphics_input][Turn_rate_roll_deg_pilot_Input][]
                 <[uint32][InputID][RateOfTurn.Output]>
                 <[float64][Scaling][57.29578]>
-            >			
+            >
             <[graphics_linear_interpolation][TurnIndicatorPassengerMapping][]
                 <[string8][Input][Turn_rate_roll_deg_pilot_Input.Output]>
                 <[tmvector2d][Map][ (-60.0 -0.349066)
@@ -2374,12 +2374,12 @@
                 <[string8][GeometryList][ Compass1 ]>
                 <[uint32][PositionID][MagneticCompassCard.R]>
                 <[uint32][OrientationID][MagneticCompassCard.Q]>
-            >			
+            >
 			// balance indicator - passenger
             <[graphics_input][Slip_deg_Input][]
                 <[uint32][InputID][BalanceIndicatorDeflection.Output]>
                 <[float64][Scaling][57.29578]>
-            >			
+            >
             <[graphics_linear_interpolation][BalanceBallPassengerMapping][]
                 <[string8][Input][Slip_deg_Input.Output]>
                 <[tmvector2d][Map][ (-10.0 -0.209440)
@@ -2397,30 +2397,30 @@
 			// altimeter indicator 100 - passenger
             <[graphics_input][AltimeterNeedle][]
                 <[uint32][InputID][AltimeterNeedle.Output]>
-            >			
+            >
             <[hingedbodygraphics][Altimeter100NeedlePassenger][]
                 <[string8][GeometryList][ Cockpit44790 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][Input][AltimeterNeedle.Output]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
-                <[float64][Scaling][0.020614]>	
+                <[float64][Scaling][0.020614]>
                 <[tmvector3d][Pivot][0.184818 -0.052897 0.097291]>
             >
-			// altimeter indicator 1000 - passenger			
+			// altimeter indicator 1000 - passenger
             <[hingedbodygraphics][Altimeter1000NeedlePassenger][]
                 <[string8][GeometryList][ Cockpit47550 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][Input][AltimeterNeedle.Output]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
-                <[float64][Scaling][0.0020614]>	
+                <[float64][Scaling][0.0020614]>
                 <[tmvector3d][Pivot][0.184818 -0.052897 0.097291]>
             >
 			// altimeter preasure setting - passenger
             <[graphics_input][PressureSetting][]
                 <[uint32][InputID][PressureSetting.Output]>
-            >				
+            >
             <[graphics_linear_interpolation][PressureSettingMapping][]
                 <[string8][Input][PressureSetting.Output]>
                 <[tmvector2d][Map][(94480 0.0)(108364 1.823869)]>
@@ -2432,12 +2432,12 @@
                 <[uint32][Input][PressureSettingMapping.Output]>
                 <[tmvector3d][Axis][0.0 1.0 0.0]>
                 <[tmvector3d][Pivot][0.232198 -0.077355 0.095932]>
-            >			
+            >
 			// airspeed indicator - pilot
             <[graphics_input][Airspeed_kts_pilot_Input][]
                 <[uint32][InputID][AirspeedIndicatorNeedle.Output]>
                 <[float64][Scaling][1.9438]>
-            >			
+            >
             <[graphics_linear_interpolation][AirspeedNeedlePilotMapping][]
                 <[string8][Input][Airspeed_kts_pilot_Input.Output]>
                 <[tmvector2d][Map][ (0.0 0.0)
@@ -2462,7 +2462,7 @@
                 <[string8][Input][AirspeedNeedlePilotMapping.Output]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.183903 0.053220 0.097275]>
-            >			
+            >
 			// altimeter 100 - pilot
             <[hingedbodygraphics][Altemeter100NeedlePilot][]
                 <[string8][GeometryList][ Cockpit71550 ]>
@@ -2470,7 +2470,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][Input][AltimeterNeedle.Output]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
-                <[float64][Scaling][0.020614]>				
+                <[float64][Scaling][0.020614]>
                 <[tmvector3d][Pivot][-0.746937 0.186945 0.020100]>
             >
 			// altimeter 1000 - pilot
@@ -2480,7 +2480,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][Input][AltimeterNeedle.Output]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
-                <[float64][Scaling][0.0020614]>				
+                <[float64][Scaling][0.0020614]>
                 <[tmvector3d][Pivot][-0.746937 0.186945 0.020100]>
             >
 			// altimeter preasure setting - pilot
@@ -2501,11 +2501,11 @@
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][-0.753025 0.222520 -0.006035]>
                 <[float64][Scaling][6.283186]>
-            >		
+            >
 			// tachometer indicator - pilot
             <[graphics_input][EngineSpeedInput][]
                 <[uint32][InputID][RotationSpeed.Output]>
-            >			
+            >
             <[graphics_linear_interpolation][TachometerPilotMapping][]
                 <[string8][Input][EngineSpeedInput.Output]>
                 <[tmvector2d][Map][ (0.0 0.0)
@@ -2527,7 +2527,7 @@
             <[graphics_input][EngineCylinderHeadTemperatureInput][]
                 <[uint32][InputID][EngineCylinderHeadTemperature.Output]>
                 <[float64][Offset][-273.15]>
-            >			
+            >
             <[graphics_linear_interpolation][ChtIndicatorPilotMapping][]
                 <[string8][Input][EngineCylinderHeadTemperatureInput.Output]>
                 <[tmvector2d][Map][ (0.0 0.0)
@@ -2578,11 +2578,11 @@
                 <[string8][GeometryList][ Compass2 ]>
                 <[uint32][PositionID][MagneticCompassPilotCard.R]>
                 <[uint32][OrientationID][MagneticCompassPilotCard.Q]>
-            >				
+            >
 			// manifold indicator - passenger
             <[graphics_input][EngineManifoldPressureInput][]
                 <[uint32][InputID][EngineManifoldPressure.Output]>
-            >		
+            >
             <[graphics_linear_interpolation][ManifoldIndicatorPassengerMapping][]
                 <[string8][Input][EngineManifoldPressureInput.Output]>
                 <[tmvector2d][Map][ (0.0 0.0)
@@ -2598,18 +2598,18 @@
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.183804 0.052405 -0.001340]>
             >
-			
+
 			// human animation
-			
+
             <[rigidbodygraphics][PassengerBody][]
                 <[string8][GeometryList][ Pilott15 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][ShowInside][CameraPilot]>                    
+                <[uint32][ShowInside][CameraPilot]>
             >
             <[graphics_input][UniversalTime][]
                 <[uint32][InputID][UniversalTime.Output]>
-            >			
+            >
             <[graphics_flasher][BeaconRotation][]
                 <[string8][Function][Triangle]>
                 <[string8][InputTime][UniversalTime.Output]>
@@ -2654,17 +2654,17 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][obj3Rotate_102.Output]>
-                <[uint32][ShowInside][CameraPilot]>                    
+                <[uint32][ShowInside][CameraPilot]>
             >
             <[rigidbodygraphics][PilotBody][]
                 <[string8][GeometryList][ Pilot1t14 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][ShowInside][CameraPassenger]>                    
-            >			
+                <[uint32][ShowInside][CameraPassenger]>
+            >
         >
         <[pointer_list_tmsound][SoundObjects][]
-            
+
             // wind kias 200.0
             <[soundinput][Airspeed][]
                 <[uint32][InputID][AirspeedIndicatorNeedle.Output]>
@@ -2756,9 +2756,9 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][sounds\engine_cranking.wav]>
             >
-            
+
             // propeller loop rpm_prp 2500.0
-            
+
             // engine loop rpm_eng 2500.0
             <[soundinput][RotationSpeed][]
                 <[uint32][InputID][RotationSpeed.Output]>
