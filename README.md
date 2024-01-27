@@ -10,7 +10,7 @@ Use it at your own risk!
 
 1. Unzip file and move the folder "ryanst" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
 
-2. Copy all *.tsb files from "jungmeister" folder from your Aerofly FS4 installation path into "pitts14\sounds\" folder.
+2. Copy all *.tsb files from "jungmeister" folder from your Aerofly FS4 installation path into "ryanst\sounds\" folder.
 
 # Uninstall
 
