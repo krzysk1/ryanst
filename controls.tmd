@@ -27,14 +27,14 @@
             >
             <[control_rotation][MagnetosRotation][]
                 <[string8][Input][MagnetosAngle.Output]>
-                <[tmvector3d][Axis][ 0.913545 0.0 -0.406737 ]>
+                <[tmvector3d][Axis][ 1.0 0.0 0.0 ]>
                 <[tmvector3d][Pivot][0.6243509 0.254497 0.4665433]>
             >
             <[control_cylinder][Magnetos][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][ 0.6182996 0.2558335 0.4704494 ]>
                 <[matrix3_float64][B0][ 0.311578 -0.642788  0.699816   0.261445  0.766044  0.587216  -0.913545  0.000000  0.406737  ]>
-                <[vector3_float64][Direction][ 0.913545 0.0 -0.406737 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[string8][InputTransform][MagnetosRotation.Output]>
                 <[float64][StepAngle][0.4]>
                 <[control_message][OnRotate][]
