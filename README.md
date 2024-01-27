@@ -19,6 +19,7 @@ Use it at your own risk!
 # Resources
 
  http://www.airminded.net/st/staosm.html
+ 
  https://archive.org/details/operation-service-manual-ryan-st-a-1-july-1940-piction-id-76753480/mode/1up
 
 # Weights
