@@ -1,0 +1,28 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            <[multibody_joint][DriveShaft][]
+                <[float64][Velocity][0.0]>
+            >
+            <[input_lever][ThrottleInput][]
+                <[float64][Value][0.0]>
+            >
+            <[input_lever][MixtureLever][]
+                <[float64][Value][0.0]>
+            >
+            <[input_discrete][Magnetos][]			
+                <[float64][Value][0.0]>
+            >				
+            <[input_switch][FuelSelectorInput][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][MasterBatterySwitch][]
+                <[float64][Value][0.0]>
+            >
+            <[input_switch][PitotHeatSwitch][]
+                <[float64][Value][0.0]>
+            >			
+        >
+    >
+>

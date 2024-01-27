@@ -1,0 +1,41 @@
+<[file][][]
+    <[object][][]
+        <[int][Version][220]>
+        <[vec32array][ContactSpheres][ (0.445 0.829 -1.436 0.244) (0.445 -0.829 -1.436 0.244) (-3.866 0.000 -0.568 0.101) ]>
+        <[string8][ICAO][ABCD]>
+        <[string8][DisplayName][Ryan ST-A]>
+        <[string8][DisplayNameFull][Ryan ST-A]>
+        <[localized_text_list][Descriptions][]
+            <[localized_text][][]
+                <[string8][Language][en]>
+                <[string8][Text][The Ryan STs were a series of two seat, low-wing monoplane aircraft built in the United States by the Ryan Aeronautical Company. They were used as sport aircraft, as well as trainers by flying schools and the militaries of several countries. Made by Krzysztof Kaniewski. 3D model: FTLX Designs.]>
+            >
+            <[localized_text][][]
+                <[string8][Language][de]>
+                <[string8][Text][Die Ryan STs waren eine Serie von zweisitzigen, Tiefdecker-Monoplans, die in den Vereinigten Staaten von der Ryan Aeronautical Company gebaut wurden. Sie wurden als Sportflugzeuge sowie als Schulungsflugzeuge von Flugschulen und den Streitkräften mehrerer Länder genutzt. Hergestellt von Krzysztof Kaniewski. 3D-Modell: FTLX Designs.]>
+            >			
+        >
+        <[float64][MaximumTakeoffMass][714.0]>
+        <[float64][WingSpan]          [9.12]>
+        <[uint]   [Year]              [1934]>
+        <[uint]   [UnitsBuilt]        [1568]>
+        <[uint]   [EngineCount]       [1]>
+        <[float64][EnginePower]       [93212]>
+        <[float64][MinimumAirspeed]   [18.0]>
+        <[float64][ApproachAirspeed]  [27.3]>
+        <[float64][CruiseAirspeed]    [70.2]>
+        <[float64][CruiseAltitude]    [3352.8]>
+        <[float64][CruiseSpeed]       [55.0]>
+        <[float64][MaximumAirspeed]   [65.0]>
+        <[float64][MaximumAltitude]   [5300.0]>
+        <[float64][MaximumSpeed]      [65.0]>
+        <[float64][MaximumRange]      [560000.0]>
+        <[tmvector2d][FlapAirspeedRange][ 18.0 45.0 ]>
+        <[tmvector2d][NormalAirspeedRange][ 21.0 50.0 ]>
+        <[tmvector2d][CautionAirspeedRange][ 50.0 65.0 ]>
+        <[tmvector2d][FlapSettings][ (0.00 0.0) (0.25 0.1745) (0.50 0.3490) (0.75 0.5235) (1.00 0.7853) ]>
+        <[string8][FlapQualifier][ ]>
+        <[string8][Tags][ airplane historical piston flaps general_aviation gear tailgear ]>
+        <[string8][Pilot][]>
+    >
+>

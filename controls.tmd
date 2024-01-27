@@ -1,0 +1,353 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmcontrol][ControlObjects][]
+
+			// barometer setting	
+            <[control_cylinder][PressureSetting][]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][0.2241 -0.1662 0.01711 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][PressureSetting]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.009]>
+                <[float64][Length][0.01]>
+            >	
+
+			// magneto switches
+            <[control_input][MagnetosInput][]
+                <[uint32][InputID][Magnetos.Output]>
+            >
+            <[control_product][MagnetosAngle][]
+                <[uint32][Inputs][ MagnetosInput.Output 0.53 ]>
+            >
+            <[control_rotation][MagnetosRotation][]
+                <[string8][Input][MagnetosAngle.Output]>
+                <[tmvector3d][Axis][ 0.913545 0.0 -0.406737 ]>
+                <[tmvector3d][Pivot][0.6243509 0.254497 0.4665433]>
+            >
+            <[control_cylinder][Magnetos][]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][ 0.6182996 0.2558335 0.4704494 ]>
+                <[matrix3_float64][B0][ 0.311578 -0.642788  0.699816   0.261445  0.766044  0.587216  -0.913545  0.000000  0.406737  ]>
+                <[vector3_float64][Direction][ 0.913545 0.0 -0.406737 ]>
+                <[string8][InputTransform][MagnetosRotation.Output]>
+                <[float64][StepAngle][0.4]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Magnetos1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.012]>
+                <[float64][Length][0.002]>
+            >
+            <[control_cylinder][Magnetos Base][]
+                <[string8][Type][knob base]>
+                <[vector3_float64][R0][ 0.6368653 0.2546709 0.4616407 ]>
+                <[matrix3_float64][B0][ 0.913545 0.0 -0.406737  0.0 1.0 0.0  0.406737 0.0 0.913545 ]>
+                <[vector3_float64][Direction][ 0.913545 0.0 -0.406737 ]>
+                <[float64][StepAngle][0.4]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Magnetos1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[control_message][OnPush][]
+                    <[string8][Message][Controls.Magnetos1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.012]>
+                <[float64][Length][0.007]>
+            >		
+					
+			// master battery switch
+            <[control_cylinder][MasterBatterySwitch][]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][-0.1849 -0.2791 -0.1764]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.MasterBattery]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.012]>
+                <[float64][Length][0.01]>
+            >
+			// pitot teat switch
+            <[control_cylinder][PitotHeatSwitch][]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][-0.1849 -0.2791 -0.1764]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 0.0 0.0 1.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.PitotHeat]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.012]>
+                <[float64][Length][0.01]>
+            >			
+			
+			
+			// fuel selector
+            <[control_input][FuelSelectorInput][]
+                <[uint32][InputID][FuelSelector.Output]>
+                <[float64][Scaling][1.57]>
+            >
+            <[control_rotation][FuelSelectorRotation][]
+                <[string8][Input][FuelSelectorInput.Output]>
+                <[tmvector3d][Axis][ -0.2106789 0.0 0.9775553]>
+                <[tmvector3d][Pivot][0.5175686 -0.005531952 0.2814177]>
+            >
+            <[control_box][FuelSelector][]
+                <[string8][Type][knob toggle]>
+                <[vector3_float64][R0][ 0.516 -0.003 0.2747 ]>
+                <[matrix3_float64][B0][ 0.224951  0.000000 -0.974370   0.712609  0.681998  0.164519   0.664519 -0.731354  0.153416  ]>
+                <[vector3_float64][Direction][0.224951  0.000000 -0.974370]>
+                <[float64][StepAngle][0.8]>
+                <[string8][InputTransform][FuelSelectorRotation.Output]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.FuelSelector]>
+                    <[string8][Qualifiers][value]>
+                    <[float64][Value][-1.0]>
+                >
+                <[vector3_float64][Dimensions][0.01 0.02 0.05]>
+            >
+            <[control_cylinder][FuelSelectorBase][]
+                <[string8][Type][knob toggle base]>
+                <[vector3_float64][R0][ 0.52 -0.005 0.268 ]>
+                <[matrix3_float64][B0][ 0.224951  0.000000 -0.974370   0.712609  0.681998  0.164519   0.664519 -0.731354  0.153416  ]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.FuelSelector]>
+                    <[string8][Qualifiers][value]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.03]>
+                <[float64][Length][0.002]>
+            >
+			// trim lever
+            <[control_cylinder][TrimWheel][]
+                <[string8][Type][wheel]>
+                <[vector3_float64][R0][0.4265 -0.006 0.2055]>
+                <[matrix3_float64][B0][ 0.0 -1.0 0.0  1.0 0.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.01]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Trim]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.05]>
+                <[float64][Length][0.02]>
+            >						
+			// throttle lever
+            <[control_input][ThrottleLeverInput][]
+                <[uint32][InputID][ServoThrottle.Output]> 
+                <[float64][Scaling][-1.047198]>	
+                <[float64][Offset][1.047198]>						
+            >
+            <[control_rotation][ThrottleLeverTransform][]
+                <[string8][Input][ThrottleLeverInput.Output]>
+                <[tmvector3d][Axis][0.000000 -1.000000 0.000000]>
+                <[tmvector3d][Pivot][-0.019290 0.268680 -0.119610]>
+            >			
+            <[control_sphere][ThrottleLever][]
+                <[string8][Type][lever]>
+                <[vector3_float64][R0][ 0.01469 0.2763 -0.06103 ]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.001]>
+                <[string8][InputTransform][ThrottleLeverTransform.Output]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Throttle1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.01]>
+                >
+                <[float64][Radius][0.02]>
+            >
+			// primer lever			
+            <[control_input][PrimerLeverInput][]
+                <[uint32][InputID][PrimerLever.Output]>
+                <[float64][Scaling][0.035]>
+            >
+            <[control_sum][PrimerLeverOffset][]
+                <[uint32][Inputs][PrimerLeverInput.Output -0.035]>
+            >
+            <[control_translation][PrimerLeverTranslation][]
+                <[string8][Input][PrimerLeverOffset.Output]>
+                <[tmvector3d][Axis][0.911300 0.0 -0.411700]>
+            >
+            <[control_cylinder][PrimerLever][]
+                <[string8][Type][lever]>
+                <[vector3_float64][R0][0.623 0.09424502 0.4695]>
+                <[matrix3_float64][B0][ 0.913545 0.0 -0.406737  0.0 1.0 0.0  0.406737 0.0 0.913545 ]>
+                <[vector3_float64][Direction][0.913545 0.0 -0.406737]>
+                <[string8][InputTransform][PrimerLeverTranslation.Output]>
+                <[float64][StepDistance][0.002]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Primer]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.012]>
+                <[float64][Length][0.01]>
+            >
+			// mixture lever
+            <[control_input][MixtureLeverInput][]
+                <[uint32][InputID][MixtureLever.Output]>
+                <[float64][Scaling][0.035]>
+            >
+            <[control_sum][MixtureLeverOffset][]
+                <[uint32][Inputs][MixtureLeverInput.Output -0.035]>
+            >
+            <[control_translation][MixtureLeverTranslation][]
+                <[string8][Input][MixtureLeverOffset.Output]>
+                <[tmvector3d][Axis][0.911300 0.0 -0.411700]>
+            >
+            <[control_cylinder][MixtureLever][]
+                <[string8][Type][lever]>
+                <[vector3_float64][R0][0.623 0.09424502 0.4695]>
+                <[matrix3_float64][B0][ 0.913545 0.0 -0.406737  0.0 1.0 0.0  0.406737 0.0 0.913545 ]>
+                <[vector3_float64][Direction][0.913545 0.0 -0.406737]>
+                <[string8][InputTransform][MixtureLeverTranslation.Output]>
+                <[float64][StepDistance][0.002]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Mixture1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.012]>
+                <[float64][Length][0.01]>
+            >
+			
+			// parking brake lever
+            <[control_input][BrakeHandleInput][]
+                <[uint32][InputID][BrakeHandlePulled.Output]>
+                <[float64][Scaling][0.07]>
+            >
+            <[control_sum][BrakeHandleShift][]
+                <[string8][Inputs][BrakeHandleInput.Output 0.01]>
+            >
+            <[control_translation][BrakeHandleTranslation][]
+                <[string8][Input][BrakeHandleShift.Output]>
+                <[vector3_float64][Axis][ -0.9011037 0.0 0.4336036 ]>
+            >
+            <[control_input][BrakeHandleRotationInput][]
+                <[uint32][InputID][BrakeHandleRotated.Output]>
+                <[float64][Scaling][2.1]>
+            >
+            <[control_rotation][BrakeHandleRotation][]
+                <[string8][Input][BrakeHandleRotationInput.Output]>
+                <[tmvector3d][Axis][ 0.9011037 0.0 -0.4336036 ]>
+                <[tmvector3d][Pivot][ 0.672161 -0.009265541 0.316763 ]>
+                <[string8][InputTransform][BrakeHandleTranslation.Output]>
+            >
+            <[control_cylinder][ParkBrake][]
+                <[string8][Type][lever toggle]>
+                <[vector3_float64][R0][ 0.5695525 -0.009265548 0.3661373 ]>
+                <[matrix3_float64][B0][-0.178606  0.906308 -0.383022  -0.906308 0.000000  0.422618   0.383022  0.422618  0.821394  ]>
+                <[vector3_float64][Direction][ 0.9011037 0.0 -0.4336036 ]>
+                <[float64][StepDistance][0.006]>
+                <[string8][InputTransform][BrakeHandleRotation.Output]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.ParkingBrake]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-0.1]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.07]>
+            >
+            <[control_cylinder][ParkBrakeBase][]
+                <[string8][Type][lever toggle base]>
+                <[vector3_float64][R0][ 0.60 -0.009 0.351 ]>
+                <[matrix3_float64][B0][-0.178606  0.906308 -0.383022  -0.906308 0.000000  0.422618   0.383022  0.422618  0.821394  ]>
+                <[matrix3_float64][B0][0.9011037 0.0 -0.4336036  0.0 1.0 0.0  0.4336036 0.0 0.9011037 ]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.ParkingBrake]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-0.1]>
+                >
+                <[float64][Radius][0.02]>
+                <[float64][Length][0.002]>
+            >
+			
+			// flaps lever
+            <[control_input][InputFlaps][]
+                <[uint32][InputID][ServoFlaps.Output]>
+            >
+            <[control_product][FlapsTravel][]
+                <[uint32][Inputs][InputFlaps.Output 0.8]>
+            >
+            <[control_rotation][FlapsTransform][]
+                <[string8][Input][FlapsTravel.Output]>
+                <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
+                <[tmvector3d][Pivot][-0.103270 0.0 0.118080]>
+            >
+            <[control_cylinder][FlapLever][]
+                <[string8][Type][lever]>
+                <[vector3_float64][R0][0.25 -0.00523 0.212]>
+                <[matrix3_float64][B0][ 0.965926  0.000000  0.258819  0.000000  1.000000  0.000000 -0.258819  0.000000  0.965926 ]>
+                <[string8][InputTransform][FlapsTransform.Output]>
+                <[vector3_float64][Direction][0.258819  0.000000 -0.965926]>
+                <[float64][StepDistance][0.06]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Flaps]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][-1.0]>
+                >
+                <[float64][Radius][0.018]>
+                <[float64][Length][0.11]>
+            >
+			
+			// stick
+           <[control_input][StickElevator][]
+                <[uint32][InputID][ServoStickElevator.Output]>
+                <[float64][Scaling][-0.261799]>
+            >
+            <[control_input][StickAileron][]
+                <[uint32][InputID][ServoStickAileron.Output]> 
+                <[float64][Scaling][0.261799]>
+            >
+            <[control_rotation][ElevatorTransform][]
+                <[string8][Input][StickElevator.Output]>
+                <[tmvector3d][Axis][0.005047 -0.999987 0.000000]>
+                <[tmvector3d][Pivot][0.027695 0.001270 -0.587415]>
+            >
+            <[control_rotation][StickTransform][]
+                <[string8][InputTransform][ElevatorTransform.Output]>
+                <[string8][Input][StickAileron.Output]>
+                <[tmvector3d][Axis][1.000000 0.000000 0.000000]>
+                <[tmvector3d][Pivot][-0.570980 0.001375 -0.611435]>
+            >
+            <[control_cylinder][StickGrip][114]
+                <[string8][Type][stick]>
+                <[vector3_float64][R0][ 0.02695 0.0 -0.1979 ]>
+                <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[vector3_float64][Direction2][ 0.0 -1.0 0.0 ]>
+                <[float64][StepDistance][0.00005]>
+                <[string8][InputTransform][StickTransform.Output]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.Roll.Input]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][7.0]>
+                >
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Pitch.Input]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.0004]>
+                >
+                <[float64][Radius][0.02]>
+                <[float64][Length][0.1>
+            >			
+        >
+    >
+>
