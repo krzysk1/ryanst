@@ -1,7 +1,7 @@
 # ryanst
-Ryan ST-A for Aerofly FS4, 3D model by FTLX Designs
+ Ryan ST-A for Aerofly FS4
 
-This is free add-on for Aerofly FS4 created by Krzysztof Kaniewski with the Aerofly FS4 SDK.
+This is free add-on for Aerofly FS4 created by Krzysztof Kaniewski with the Aerofly FS4 SDK, 3D model by FTLX Designs.
 
 Some features may not work as intended and this aircraft could crash your Aerofly FS4. 
 Use it at your own risk!

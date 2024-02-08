@@ -2,7 +2,7 @@
     <[object][][]
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ (0.445 0.829 -1.436 0.244) (0.445 -0.829 -1.436 0.244) (-3.866 0.000 -0.568 0.101) ]>
-        <[string8][ICAO][ABCD]>
+        <[string8][ICAO][RYAN]>
         <[string8][DisplayName][Ryan ST-A]>
         <[string8][DisplayNameFull][Ryan ST-A]>
         <[localized_text_list][Descriptions][]

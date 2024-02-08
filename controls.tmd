@@ -310,7 +310,7 @@
             <[control_cylinder][FlapLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][-0.6734 -0.2876 -0.2048]>
-                <[matrix3_float64][B0][ 0.978022 0.0 0.2085  0.0 1.0 0.0 -0.2085 0.0 0.978022 ]>
+                <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
                 <[string8][InputTransform][FlapsTransform.Output]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.01]>
