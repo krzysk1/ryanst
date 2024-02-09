@@ -7,7 +7,8 @@
     //
     // LEGAL:
     // This file is FREEWARE. It should not harm your computer, but you install it at your own risk.
-	// Feel free to copy, modify or distribute it, but if you do, please give me and the original author(s) credit for our modifications. You may not use it for any commercial purposes.
+	// Feel free to copy, modify or distribute it, but if you do, please give me and the original author(s) credit for our modifications.
+	// You may not use it for any commercial purposes.
     //
     // Date: Nov 2022; May 2023; Jan 2024
     //-------------------------------------
@@ -2453,6 +2454,12 @@
 
 			// human animation
 
+            <[rigidbodygraphics][PilotBody][]
+                <[string8][GeometryList][ Pilot1t14 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][ShowInside][CameraPassenger]>
+            >
             <[rigidbodygraphics][PassengerBody][]
                 <[string8][GeometryList][ Pilott15 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -2465,54 +2472,48 @@
             <[graphics_flasher][BeaconRotation][]
                 <[string8][Function][Triangle]>
                 <[string8][InputTime][UniversalTime.Output]>
-                <[float64][Period][25.5]>
+                <[float64][Period][45.5]>
                 <[float64][Minimum][0.0]>
             >
-            <[graphics_linear_interpolation][obj3Input_0][]
+            <[graphics_linear_interpolation][PassengerHeadInput_0][]
                 <[uint32][Input][BeaconRotation.Output]>
                 <[tmvector2d][Map][(0 0) (1 360) ]>
             >
-            <[graphics_linear_interpolation][obj3Mapping_90][]
-                <[string8][Input][obj3Input_0.Output]>
+            <[graphics_linear_interpolation][PassengerHeadMapping_90][]
+                <[string8][Input][PassengerHeadInput_0.Output]>
                 <[tmvector2d][Map][(0.0 0.0) (140.0 0.040666) (280.0 0.043633) (360.0 0.052011) ]>
             >
-            <[graphics_rotation][obj3Rotate_90][]
-                <[string8][Input][obj3Mapping_90.Output]>
+            <[graphics_rotation][PassengerHeadRotate_90][]
+                <[string8][Input][PassengerHeadMapping_90.Output]>
                 <[tmvector3d][Axis][ -1.0 0.0 0.0 ]>
                 <[tmvector3d][Pivot][-0.241831 -0.006611 0.221119]>
             >
-            <[graphics_linear_interpolation][obj3Mapping_96][]
-                <[string8][Input][obj3Input_0.Output]>
+            <[graphics_linear_interpolation][PassengerHeadMapping_96][]
+                <[string8][Input][PassengerHeadInput_0.Output]>
                 <[tmvector2d][Map][(0.0 0.0) (140.0 -0.434587) (280.0 0.174533) (360.0 -0.002443) ]>
             >
-            <[graphics_rotation][obj3Rotate_96][]
-                <[string8][Input][obj3Mapping_96.Output]>
+            <[graphics_rotation][PassengerHeadRotate_96][]
+                <[string8][Input][PassengerHeadMapping_96.Output]>
                 <[tmvector3d][Axis][ 0.0 0.0 1.0 ]>
                 <[tmvector3d][Pivot][-0.241831 -0.006611 0.221119]>
-                <[string8][InputTransform][obj3Rotate_90.Output]>
+                <[string8][InputTransform][PassengerHeadRotate_90.Output]>
             >
-            <[graphics_linear_interpolation][obj3Mapping_102][]
-                <[string8][Input][obj3Input_0.Output]>
+            <[graphics_linear_interpolation][PassengerHeadMapping_102][]
+                <[string8][Input][PassengerHeadInput_0.Output]>
                 <[tmvector2d][Map][(0.0 0.0) (140.0 -0.096168) (280.0 -0.037176) (360.0 0.006807) ]>
             >
-            <[graphics_rotation][obj3Rotate_102][]
-                <[string8][Input][obj3Mapping_102.Output]>
+            <[graphics_rotation][PassengerHeadRotate_102][]
+                <[string8][Input][PassengerHeadMapping_102.Output]>
                 <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
                 <[tmvector3d][Pivot][-0.241831 -0.006611 0.221119]>
-                <[string8][InputTransform][obj3Rotate_96.Output]>
+                <[string8][InputTransform][PassengerHeadRotate_96.Output]>
             >
             <[rigidbodygraphics][PassengerHead][]
                 <[string8][GeometryList][ Pilott2195715 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][obj3Rotate_102.Output]>
+                <[string8][InputTransform][PassengerHeadRotate_102.Output]>
                 <[uint32][ShowInside][CameraPilot]>
-            >
-            <[rigidbodygraphics][PilotBody][]
-                <[string8][GeometryList][ Pilot1t14 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][ShowInside][CameraPassenger]>
             >
         >
         <[pointer_list_tmsound][SoundObjects][]
