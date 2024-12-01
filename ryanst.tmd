@@ -31,9 +31,9 @@
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
             >
             <[camera_head][CameraPilot][]
-                <[string8][Tags][cockpit pilot]>
+                <[string8][Tags][cockpit pilot rear]>
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -1.158 0.000 0.366 ]>
+                <[tmvector3d][R0][ -1.158 0.000 0.340 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][Kf][40.0]>
                 <[float64][Df][1.00]>
@@ -42,9 +42,9 @@
                 <[bool][InCockpit][true]>
             >
             <[camera_head][CameraPassenger][]
-                <[string8][Tags][cockpit Passenger]>
+                <[string8][Tags][cockpit passenger front]>
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -0.158 0.000 0.366 ]>
+                <[tmvector3d][R0][ -0.158 0.000 0.340 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][Kf][40.0]>
                 <[float64][Df][1.00]>
