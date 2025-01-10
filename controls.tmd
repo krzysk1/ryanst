@@ -14,8 +14,8 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][0.1]>
                 >
-                <[float64][Radius][0.009]>
-                <[float64][Length][0.01]>
+                <[float64][Radius][0.00483]>
+                <[float64][Length][0.00807]>
             >
 			// magneto switches
             <[control_input][MagnetosInput][]
@@ -32,7 +32,7 @@
             <[control_cylinder][Magnetos][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][ -0.7604 0.2550 -0.04239 ]>
-                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+                <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[string8][InputTransform][MagnetosRotation.Output]>
                 <[float64][StepAngle][0.4]>
@@ -76,8 +76,8 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
-                <[float64][Radius][0.012]>
-                <[float64][Length][0.01]>
+                <[float64][Radius][0.003128]>
+                <[float64][Length][0.0173]>
             >
 			// pitot heat switch
             <[control_cylinder][PitotHeatSwitch][]
@@ -91,8 +91,8 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
-                <[float64][Radius][0.012]>
-                <[float64][Length][0.01]>
+                <[float64][Radius][0.003128]>
+                <[float64][Length][0.0173]>
             >		
 			// fuel selector
             <[control_input][FuelSelectorInput][]
@@ -191,7 +191,7 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][0.01]>
                 >
-                <[float64][Radius][0.03]>
+                <[float64][Radius][0.015635]>
             >
 			// primer lever			
             <[control_input][PrimerLeverInput][]
@@ -243,7 +243,7 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
-                <[float64][Radius][0.03]>
+                <[float64][Radius][0.015635]>
             >			
 			// parking brake lever
             <[control_input][BrakeHandleInput][]
@@ -319,7 +319,7 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][-1.0]>
                 >
-                <[float64][Radius][0.018]>
+                <[float64][Radius][0.009875]>
                 <[float64][Length][0.15]>
             >		
 			// stick
@@ -344,7 +344,7 @@
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][-0.378601 -0.000108 -0.600956]>
             >
-            <[control_cylinder][StickGrip][114]
+            <[control_cylinder][StickGrip][]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][ -0.7146 0.1047 -0.1952 ]>
                 <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
@@ -362,8 +362,8 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][0.0004]>
                 >
-                <[float64][Radius][0.03]>
-                <[float64][Length][0.1>
+                <[float64][Radius][0.014]>
+                <[float64][Length][0.0952>
             >			
         >
     >
