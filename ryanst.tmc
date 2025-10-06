@@ -15,6 +15,18 @@
                 <[string8][Text][Die Ryan STs waren eine Serie von zweisitzigen, Tiefdecker-Monoplans, die in den Vereinigten Staaten von der Ryan Aeronautical Company gebaut wurden. Sie wurden als Sportflugzeuge sowie als Schulungsflugzeuge von Flugschulen und den Streitkräften mehrerer Länder genutzt. Hergestellt von Krzysztof Kaniewski. 3D-Modell: FTLX Designs.]>
             >			
             <[localized_text][element][2]
+                <[string8u][Language][fr]>
+                <[string8][Text][Les Ryan ST étaient une série d'avions monoplans à deux places et à ailes basses construits aux États-Unis par la Ryan Aeronautical Company. Ils étaient utilisés comme avions de sport, ainsi que comme avions d'entraînement par les écoles de pilotage et les armées de plusieurs pays. Réalisé par Krzysztof Kaniewski. Modèle 3D : FTLX Designs.]>
+			>
+            <[localized_text][element][3]
+                <[string8u][Language][es]>
+                <[string8][Text][Los Ryan ST eran una serie de aviones monoplanos de dos plazas y ala baja construidos en Estados Unidos por la Ryan Aeronautical Company. Se utilizaban como aviones deportivos, así como para el entrenamiento en escuelas de vuelo y en las fuerzas armadas de varios países. Creado por Krzysztof Kaniewski. Modelo 3D: FTLX Designs.]>
+			>
+            <[localized_text][element][4]
+                <[string8u][Language][it]>
+                <[string8][Text][I Ryan ST erano una serie di velivoli biposto monoplani ad ala bassa costruiti negli Stati Uniti dalla Ryan Aeronautical Company. Venivano utilizzati come velivoli sportivi e come aerei da addestramento dalle scuole di volo e dalle forze armate di diversi paesi. Realizzato da Krzysztof Kaniewski. Modello 3D: FTLX Designs.]>
+			>
+            <[localized_text][element][5]
                 <[string8u][Language][pl]>
                 <[string8][Text][Ryan ST to seria dwumiejscowych, jednopłatowych samolotów niskopodwoziowych zbudowanych w Stanach Zjednoczonych przez Ryan Aeronautical Company. Były używane jako samoloty sportowe, a także jako samoloty szkoleniowe przez szkoły latania i wojsko kilku krajów. Wykonany przez Krzysztofa Kaniewskiego. Model 3D: FTLX Designs.]>
 			>
