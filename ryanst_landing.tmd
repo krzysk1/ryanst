@@ -4,12 +4,12 @@
 
             // engine
             <[input_lever][ThrottleInput][]
-                <[float64][Value][0.168739323242838]>
+                <[float64][Value][0.1687]>
             >
-            <[servoclassic][ThrottleLever][]
-                <[float64][Position][0.168739323242838]>
+            <[servolinear][ServoThrottle][]
+                <[float64][Position][0.1687]>
             >
-            <[multibody_joint][DriveShaft][]
+            <[jointtorque][DriveShaft][]
                 <[float64][Velocity][116.0]>
             >
             <[input_lever][MixtureLever][]

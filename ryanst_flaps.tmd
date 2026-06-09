@@ -82,18 +82,18 @@
                 <[float64][Value][1.0]>
             >
             <[servoclassic][ServoFlaps][]
-                <[float64][Position][0.872664619237]>
+                <[float64][Position][0.87266]>
             >
 
             // trim landing
             <[input_default][PitchTrim][]
-                <[float64][Value][-0.360101747359642]>
+                <[float64][Value][-0.3601]>
             >
             <[servoclassic][PitchTrimDisplay][]
-                <[float64][Position][-0.260979231501367]>
+                <[float64][Position][-0.2609]>
             >
             <[servoclassic][ServoElevator][]
-                <[float64][Position][-0.0118076504152001]>
+                <[float64][Position][-0.0118]>
             >
         >
     >

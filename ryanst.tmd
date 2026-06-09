@@ -256,10 +256,10 @@
                 <[string8][InputBrake][LeftBrake.Output]>
                 <[float64][BrakeStrength][0.65]>
             >
-            <[output][GroundRollSpeedLeftWheel][]
+            <[output][GroundRollSpeedLeft][]
                 <[string8][Input][LeftWheelHull.Speed]>
             >
-            <[output][GroundRollLoadLeftWheel][]
+            <[output][GroundRollLoadLeft][]
                 <[string8][Input][LeftWheelHull.Load]>
             >
             <[wheel][RightWheelHull][]
@@ -275,10 +275,10 @@
                 <[string8][InputBrake][RightBrake.Output]>
                 <[float64][BrakeStrength][0.65]>
             >
-            <[output][GroundRollSpeedRightWheel][]
+            <[output][GroundRollSpeedRight][]
                 <[string8][Input][RightWheelHull.Speed]>
             >
-            <[output][GroundRollLoadRightWheel][]
+            <[output][GroundRollLoadRight][]
                 <[string8][Input][RightWheelHull.Load]>
             >
             <[wheel][TailWheelHull][]
@@ -292,10 +292,10 @@
                 <[tmvector3d][R0][-3.866 0.000 -0.568]>
                 <[tmvector3d][X0][ 1.000 0.000 0.0 ]>
             >
-            <[output][GroundRollSpeedTailWheel][]
+            <[output][GroundRollSpeedTail][]
                 <[string8][Input][TailWheelHull.Speed]>
             >
-            <[output][GroundRollLoadTailWheel][]
+            <[output][GroundRollLoadTail][]
                 <[string8][Input][TailWheelHull.Load]>
             >
 
@@ -363,7 +363,6 @@
                 <[string8][InputPressure0][MainFuelLine.Output]>
                 <[string8][AddFlow][MainFuelLine.AddFlow]>
             >
-
             <[fuel_deprecated_line][MainFuelLine][]
                 <[float64][Pressure][101325.0]>
             >
@@ -881,7 +880,7 @@
                 <[string8][Input][RudderInput.Output]>
                 <[string8][Message][Aircraft.Rudder]>
             >
-            <[input_lever]][FlapsInput][]
+            <[input_lever][FlapsInput][]
                 <[string8][Message][Controls.Flaps]>
                 <[uint][Positions][5]>
             >
