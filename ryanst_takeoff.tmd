@@ -10,7 +10,7 @@
             <[input_lever][MixtureLever][]
                 <[float64][Value][1.0]>
             >
-            <[input_discrete][Magnetos][]			
+            <[input_discrete][Magnetos][]
                 <[float64][Value][3.0]>
             >
         >

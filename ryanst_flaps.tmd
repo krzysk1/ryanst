@@ -6,16 +6,13 @@
             <[input_lever][FlapsInput][]
                 <[float64][Value][0.0]>
             >
-            <[servoclassic][ServoFlaps][]
+            <[servolinear][ServoFlaps][]
                 <[float64][Position][0.0]>
             >
 
             // trim cruise
             <[input_default][PitchTrim][]
                 <[float64][Value][0.0]>
-            >
-            <[servoclassic][PitchTrimDisplay][]
-                <[float64][Position][0.0]>
             >
             <[servoclassic][ServoElevator][]
                 <[float64][Position][0.0]>
@@ -31,16 +28,13 @@
             <[input_lever][FlapsInput][]
                 <[float64][Value][0.0]>
             >
-            <[servoclassic][ServoFlaps][]
+            <[servolinear][ServoFlaps][]
                 <[float64][Position][0.0]>
             >
 
             // trim takeoff
             <[input_default][PitchTrim][]
                 <[float64][Value][0.0]>
-            >
-            <[servoclassic][PitchTrimDisplay][]
-                <[float64][Position][0.0]>
             >
             <[servoclassic][ServoElevator][]
                 <[float64][Position][0.0]>
@@ -56,16 +50,13 @@
             <[input_lever][FlapsInput][]
                 <[float64][Value][0.5]>
             >
-            <[servoclassic][ServoFlaps][]
+            <[servolinear][ServoFlaps][]
                 <[float64][Position][0.26]>
             >
 
             // trim approach
             <[input_default][PitchTrim][]
                 <[float64][Value][0.0]>
-            >
-            <[servoclassic][PitchTrimDisplay][]
-                <[float64][Position][0.0]>
             >
             <[servoclassic][ServoElevator][]
                 <[float64][Position][0.0]>
@@ -81,16 +72,13 @@
             <[input_lever][FlapsInput][]
                 <[float64][Value][1.0]>
             >
-            <[servoclassic][ServoFlaps][]
+            <[servolinear][ServoFlaps][]
                 <[float64][Position][0.87266]>
             >
 
             // trim landing
             <[input_default][PitchTrim][]
                 <[float64][Value][-0.3601]>
-            >
-            <[servoclassic][PitchTrimDisplay][]
-                <[float64][Position][-0.2609]>
             >
             <[servoclassic][ServoElevator][]
                 <[float64][Position][-0.0118]>

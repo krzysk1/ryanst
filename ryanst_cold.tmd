@@ -11,9 +11,9 @@
             <[input_lever][MixtureLever][]
                 <[float64][Value][0.0]>
             >
-            <[input_discrete][Magnetos][]			
+            <[input_discrete][Magnetos][]
                 <[float64][Value][0.0]>
-            >				
+            >
             <[input_switch][FuelSelectorInput][]
                 <[float64][Value][0.0]>
             >
@@ -22,7 +22,7 @@
             >
             <[input_switch][PitotHeatSwitch][]
                 <[float64][Value][0.0]>
-            >			
+            >
         >
     >
 >

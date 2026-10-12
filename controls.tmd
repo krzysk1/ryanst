@@ -2,7 +2,7 @@
     <[modelmanager][][]
         <[pointer_list_tmcontrol][ControlObjects][]
 
-			// barometer setting	
+			// barometer setting
             <[control_cylinder][PressureSetting][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][-0.7557 0.2225 -0.006035 ]>
@@ -62,8 +62,8 @@
                 >
                 <[float64][Radius][0.012]>
                 <[float64][Length][0.007]>
-            >		
-					
+            >
+
 			// master battery switch
             <[control_cylinder][MasterBatterySwitch][]
                 <[string8][Type][switch toggle]>
@@ -93,7 +93,7 @@
                 >
                 <[float64][Radius][0.003128]>
                 <[float64][Length][0.0173]>
-            >		
+            >
 			// fuel selector
             <[control_input][FuelSelectorInput][]
                 <[uint32][InputID][FuelSelector.Output]>
@@ -133,13 +133,13 @@
 			// trim lever
             <[control_input][TrimLeverInput][]
                 <[uint32][InputID][ElevatorTrimPosition.Output]>
-                <[float64][Scaling][12.566372]>	
+                <[float64][Scaling][12.566372]>
             >
             <[control_rotation][TrimLeverTransform][]
                 <[string8][Input][TrimLeverInput.Output]>
                 <[tmvector3d][Axis][0.0 -0.964283 0.264873]>
                 <[tmvector3d][Pivot][-1.142890 0.271417 -0.376270]>
-            >			
+            >
             <[control_sphere][TrimLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][-1.143 0.2409 -0.4347]>
@@ -153,7 +153,7 @@
                     <[float64][Value][1.0]>
                 >
                 <[float64][Radius][0.03]>
-            >		
+            >
             <[control_cylinder][TrimBase][]
                 <[string8][Type][wheel]>
                 <[vector3_float64][R0][-1.1394 0.2970 -0.3301]>
@@ -167,18 +167,18 @@
                 >
                 <[float64][Radius][0.05]>
                 <[float64][Length][0.02]>
-            >						
+            >
 			// throttle lever
             <[control_input][ThrottleLeverInput][]
                 <[uint32][InputID][ServoThrottle.Output]> 
-                <[float64][Scaling][-1.308997]>	
-                <[float64][Offset][1.308997]>						
+                <[float64][Scaling][-1.308997]>
+                <[float64][Offset][1.308997]>
             >
             <[control_rotation][ThrottleLeverTransform][]
                 <[string8][Input][ThrottleLeverInput.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.844240 0.276699 -0.281450]>
-            >			
+            >
             <[control_sphere][ThrottleLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][ -0.7580 0.2732 -0.1715 ]>
@@ -193,7 +193,7 @@
                 >
                 <[float64][Radius][0.015635]>
             >
-			// primer lever			
+			// primer lever
             <[control_input][PrimerLeverInput][]
                 <[uint32][InputID][PrimerLever.Output]>
                 <[float64][Scaling][0.0176]>
@@ -223,14 +223,14 @@
 			// mixture lever
             <[control_input][MixtureLeverInput][]
                 <[uint32][InputID][MixtureLever.Output]>
-                <[float64][Scaling][-1.308997]>	
-                <[float64][Offset][1.308997]>	
+                <[float64][Scaling][-1.308997]>
+                <[float64][Offset][1.308997]>
             >
             <[control_rotation][MixtureLeverTransform][]
                 <[string8][Input][MixtureLeverInput.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.844240 0.276699 -0.281450]>
-            >			
+            >
             <[control_sphere][MixtureLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][-0.7794 0.2333 -0.1968]>
@@ -244,7 +244,7 @@
                     <[float64][Value][1.0]>
                 >
                 <[float64][Radius][0.015635]>
-            >			
+            >
 			// parking brake lever
             <[control_input][BrakeHandleInput][]
                 <[uint32][InputID][ParkingBrake.Output]>
@@ -258,7 +258,7 @@
                 <[vector3_float64][Axis][ -1.0 0.0 0.0 ]>
             >
             <[control_input][BrakeHandleRotationInput][]
-                <[uint32][InputID][BrakeHandleInput.Output.Output]>
+                <[uint32][InputID][ParkingBrake.Output]>
                 <[float64][Scaling][1.57]>
             >
             <[control_rotation][BrakeHandleRotation][]
@@ -294,7 +294,7 @@
                 >
                 <[float64][Radius][0.02]>
                 <[float64][Length][0.002]>
-            >			
+            >
 			// flaps lever
             <[control_input][InputFlaps][]
                 <[uint32][InputID][ServoFlaps.Output]>
@@ -321,17 +321,17 @@
                 >
                 <[float64][Radius][0.009875]>
                 <[float64][Length][0.15]>
-            >		
+            >
 			// stick
            <[control_input][StickElevator][]
                 <[uint32][InputID][ElevatorPosition.Output]>
                 <[float64][Scaling][0.261799]>
-                <[float64][Offset][0.261799]>					
+                <[float64][Offset][0.261799]>
             >
             <[control_input][StickAileron][]
                 <[uint32][InputID][AileronPosition.Output]> 
                 <[float64][Scaling][0.261799]>
-                <[float64][Offset][0.261799]>				
+                <[float64][Offset][0.261799]>
             >
             <[control_rotation][ElevatorTransform][]
                 <[string8][Input][StickElevator.Output]>
@@ -364,7 +364,7 @@
                 >
                 <[float64][Radius][0.014]>
                 <[float64][Length][0.0952]>
-            >			
+            >
         >
     >
 >
